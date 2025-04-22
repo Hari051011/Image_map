@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Places Around Chennai</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      text-align: center;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    .details {
+      margin-top: 20px;
+    }
+    .place-info {
+      display: none;
+      padding: 15px;
+      background: #fff;
+      margin: 10px auto;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+  <script>
+    function showInfo(id) {
+      const allInfos = document.querySelectorAll('.place-info');
+      allInfos.forEach(info => info.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Places in Chennai</h1>
+    <h2>HARI KRISHNAN S (24006166)</h2>
+    <img src="/static/map.png" usemap="#placesmap" alt="Map of places">
+    <map name="map.png">
+        <area target="" alt="koyembedu" title="koyembedu" href="koyembedu.html" coords="506,574,324,471" shape="rect">
+        <area target="" alt="egmore" title="egmore" href="egmore.html" coords="1039,481,45" shape="circle">
+        <area target="" alt="annanagar" title="annanagar" href="annanagar.html" coords="484,317,641,401" shape="rect">
+        <area target="" alt="senmozhi poonga" title="senmozhi poonga" href="park.html" coords="910,685,44" shape="circle">
+        <area target="" alt="vadapalani murugan temple" title="vadapalani murugan temple" href="temple.html" coords="551,636,643,730" shape="rect">
+    </map>
+</body>
+</html>
